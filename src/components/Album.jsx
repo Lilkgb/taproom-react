@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ticket(props){
+function Album(props){
   let ticketStyles = {
     backgroundColor: '#eee',
     fontFamily: 'sans-serif',

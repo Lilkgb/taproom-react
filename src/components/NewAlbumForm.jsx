@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NewTicketForm(){
+function NewAlbumForm(){
   return (
     <div>
       <form>

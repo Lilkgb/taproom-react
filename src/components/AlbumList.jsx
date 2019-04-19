@@ -1,8 +1,8 @@
 import React from 'react';
-import Ticket from './Ticket';
+import Album from './Album';
 import stewie from '../assets/images/stewie.png';
 
-const masterTicketList = [
+const masterAlbumList = [
   {
     names: 'Thato and Haley',
     location: '3A',
@@ -50,7 +50,7 @@ const masterTicketList = [
   }
 ];
 
-function TicketList(){
+function AlbumList(){
   return (
     <div>
       <img src={stewie}></img>

@@ -1,8 +1,8 @@
 import React from 'react';
-import TicketList from './TicketList';
+import AlbumList from './TicketList';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
+import NewAlbumForm from './NewTicketForm';
 import Error404 from './Error404';
 
 function App(){
@@ -10,7 +10,7 @@ function App(){
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
+        <Route exact path='/' component={AlbumList} />
         <Route exact path='/inventory' component={NewTicketForm} />
         <Route component={Error404}/>
       </Switch>
