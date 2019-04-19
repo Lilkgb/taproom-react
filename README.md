@@ -1,14 +1,12 @@
-# _React Template_
+# _Tap Room_
 
-## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
-
-#### _This is a template using webpack for React, 04/15/19_
+#### _Creating a Tap Room website using react, 04/19/19_
 
 #### By _**Ryan McLean**_
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+_This is a webpage that will be a work in progress. The Objective is to create a tap room style website that is functions with good design. You'll be able to view the company's current stock of beer on tap and what their levels are._
 
 ## Setup/Installation Requirements
 
