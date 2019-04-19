@@ -4,10 +4,10 @@ import stewie from '../assets/images/stewie.png';
 
 const masterTapList = [
   {
-    song: 'Thato and Haley',
-    album: '3A',
-    artist: 'e',
-    albumCover: ''
+    name: 'Bud Light',
+    price: '3',
+    content: '4.2',
+    picture: 'budLight.png'
   }
 ];
 
@@ -16,11 +16,11 @@ function TapList(){
     <div>
       <img src={stewie}></img>
       <hr/>
-      {masterTapList.map((album, index) =>
-        <Tap song={album.song}
-          album={album.album}
-          artist={album.artist}
-          albumCover={album.albumCover}
+      {masterTapList.map((tap, index) =>
+        <Tap name={tap.name}
+          price={tap.price}
+          content={tap.content}
+          picture={tap.picture}
           key={index}/>
       )}
     </div>

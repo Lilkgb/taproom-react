@@ -13,16 +13,18 @@ function Tap(props){
   };
   return (
     <div style={albumStyles} className='hover-shadow' data-aos='fade-in'>
-      <h3>{props.song} - {props.album}</h3>
-      <p><em>{props.artist}</em></p>
+      <h3>{props.name} - ${props.price}</h3>
+      <img src={require(`../assets/beers/${props.picture}`)}></img>
+      <p><em>ABV: {props.content}%</em></p>
     </div>
   );
 }
 
 Tap.propTypes = {
-  song: PropTypes.string.isRequired,
-  album: PropTypes.string.isRequired,
-  artist: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  picture: PropTypes.string
 };
 
 export default Tap;
