@@ -10,7 +10,7 @@ function Header(){
   return (
     <div className='bg-grn header'>
       <h1 style={margin}>Tap Room</h1>
-      <Link to="/">Home</Link> | <Link to="/newAlbum">New Tap</Link>
+      <Link to="/">Home</Link> | <Link to="/newTap">New Tap</Link>
     </div>
   );
 }
