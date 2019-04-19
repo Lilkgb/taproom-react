@@ -1,6 +1,7 @@
 import React from 'react';
 import Tap from './Tap';
 import stewie from '../assets/images/stewie.png';
+import '../scss/styles.scss';
 
 const masterTapList = [
   {
@@ -8,6 +9,12 @@ const masterTapList = [
     price: '3',
     content: '4.2',
     picture: 'budLight.png'
+  },
+  {
+    name: 'Elysian Space Dust',
+    price: '5',
+    content: '8.2',
+    picture: 'elysianSpaceDust.png'
   }
 ];
 
@@ -17,7 +24,7 @@ function TapList(){
       <img src={stewie}></img>
       <hr/>
       {masterTapList.map((tap, index) =>
-        <Tap name={tap.name}
+        <Tap className="flex" name={tap.name}
           price={tap.price}
           content={tap.content}
           picture={tap.picture}
