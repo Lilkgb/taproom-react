@@ -55,14 +55,14 @@ function AlbumList(){
     <div>
       <img src={stewie}></img>
       <hr/>
-      {masterTicketList.map((ticket, index) =>
-        <Ticket names={ticket.names}
-          location={ticket.location}
-          issue={ticket.issue}
+      {masterAlbumList.map((album, index) =>
+        <Album names={album.names}
+          location={album.location}
+          issue={album.issue}
           key={index}/>
       )}
     </div>
   );
 }
 
-export default TicketList;
+export default AlbumList;

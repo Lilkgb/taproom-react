@@ -19,10 +19,10 @@ function Album(props){
   );
 }
 
-Ticket.propTypes = {
+Album.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   issue: PropTypes.string
 };
 
-export default Ticket;
+export default Album;

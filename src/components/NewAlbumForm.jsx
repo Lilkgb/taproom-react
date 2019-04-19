@@ -21,4 +21,4 @@ function NewAlbumForm(){
   );
 }
 
-export default NewTicketForm;
+export default NewAlbumForm;
