@@ -1,6 +1,5 @@
 import React from 'react';
 import Tap from './Tap';
-import stewie from '../assets/images/stewie.png';
 import '../scss/styles.scss';
 
 const masterTapList = [

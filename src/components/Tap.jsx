@@ -13,6 +13,16 @@ function Tap(props){
   };
   return (
     <div style={tapStyles} className='hover-shadow' data-aos='fade-in'>
+      <style jsx>{`
+          div{
+            width: 300px;
+            overflow: hidden;
+          }
+          img{
+            height: 200px;
+            width: auto;
+          }
+        `}</style>
       <h3>{props.name} - ${props.price}</h3>
       <p><em>ABV: {props.content}%</em></p>
       <img src={require(`../assets/beers/${props.picture}`)}></img>
