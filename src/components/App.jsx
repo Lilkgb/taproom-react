@@ -11,7 +11,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={TicketList} />
-        <Route exact path='/newticket' component={NewTicketForm} />
+        <Route exact path='/inventory' component={NewTicketForm} />
         <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>

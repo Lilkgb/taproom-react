@@ -7,14 +7,14 @@ function NewTicketForm(){
         <input
           type='text'
           id='names'
-          placeholder='Pair Names'/>
+          placeholder='Album Name'/>
         <input
           type='text'
           id='location'
-          placeholder='Location'/>
+          placeholder='Artist Name'/>
         <textarea
           id='issue'
-          placeholder='Describe your issue.'/>
+          placeholder='Description'/>
         <button type='submit'>Help!</button>
       </form>
     </div>
