@@ -17,14 +17,11 @@ const masterTapList = [
     picture: 'elysianSpaceDust.png'
   }
 ];
-
 function TapList(){
   return (
-    <div>
-      <img src={stewie}></img>
-      <hr/>
+    <div className="flex" >
       {masterTapList.map((tap, index) =>
-        <Tap className="flex" name={tap.name}
+        <Tap name={tap.name}
           price={tap.price}
           content={tap.content}
           picture={tap.picture}
