@@ -15,7 +15,7 @@ function NewAlbumForm(){
         <textarea
           id='issue'
           placeholder='Description'/>
-        <button type='submit'>Help!</button>
+        <button type='submit'>Submit</button>
       </form>
     </div>
   );

@@ -11,7 +11,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={AlbumList} />
-        <Route exact path='/inventory' component={NewAlbumForm} />
+        <Route exact path='/newAlbum' component={NewAlbumForm} />
         <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>
