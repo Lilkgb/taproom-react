@@ -1,17 +1,17 @@
 import React from 'react';
 
-function NewAlbumForm(){
+function NewTapForm(){
   return (
     <div>
       <form>
         <input
           type='text'
           id='names'
-          placeholder='Album Name'/>
+          placeholder='Tap Name'/>
         <input
           type='text'
           id='location'
-          placeholder='Artist Name'/>
+          placeholder='Tap Alcahol Content'/>
         <textarea
           id='issue'
           placeholder='Description'/>
@@ -21,4 +21,4 @@ function NewAlbumForm(){
   );
 }
 
-export default NewAlbumForm;
+export default NewTapForm;
