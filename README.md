@@ -19,7 +19,7 @@ _This is a webpage that will be a work in progress. The Objective is to create a
 * _Push your project when ready with `git push -Your initials- -Branch name (master is default)-`_
 
 ## Diagram
-![Diagram](src/assets/diagram.png)
+![Diagram](src/assets/diagram.jpg)
 
 ## Known Bugs
 
