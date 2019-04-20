@@ -14,6 +14,30 @@ const masterTapList = [
     price: '5',
     content: '8.2',
     picture: 'elysianSpaceDust.png'
+  },
+  {
+    name: 'Elysian Dayglow',
+    price: '5',
+    content: '7.2',
+    picture: 'elysianDayglow.png'
+  },
+  {
+    name: 'Elysian Superfuzz',
+    price: '4',
+    content: '6.4',
+    picture: 'elysianSuperfuzz.png'
+  },
+  {
+    name: 'Coors Light',
+    price: '3:50',
+    content: '4.2',
+    picture: 'coorsLight.png'
+  },
+  {
+    name: 'Coors Banquet',
+    price: '4',
+    content: '5',
+    picture: 'coorsBanquet.png'
   }
 ];
 function TapList(){
