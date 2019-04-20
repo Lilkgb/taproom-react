@@ -28,8 +28,20 @@ const masterTapList = [
     picture: 'elysianSuperfuzz.png'
   },
   {
+    name: 'Modelo',
+    price: '3',
+    content: '4.5',
+    picture: 'modelo.png'
+  },
+  {
+    name: 'Corona Extra',
+    price: '3',
+    content: '4.5',
+    picture: 'coronaExtra.png'
+  },
+  {
     name: 'Coors Light',
-    price: '3:50',
+    price: '3.50',
     content: '4.2',
     picture: 'coorsLight.png'
   },
