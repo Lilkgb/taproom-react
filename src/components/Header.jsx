@@ -14,7 +14,7 @@ function Header(){
   return (
     <div className='bg-grn header'>
       <h1 style={margin}>Tap Room</h1>
-      <Link style={white} to="/">Home</Link> | <Link style={white} to="/inventory">Inventory</Link> | <Link style={white} to="/newTap">New Tap</Link> | <Link style={white} to='/formControl'>form</Link>
+      <Link style={white} to="/">Home</Link> | <Link style={white} to="/inventory">Inventory</Link> | <Link style={white} to='/formControl'>form</Link>
     </div>
   );
 }

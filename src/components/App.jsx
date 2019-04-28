@@ -21,7 +21,6 @@ class App extends React.Component{
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/inventory' component={TapList}/>
-          <Route exact path='/newTap' component={NewTapForm} />
           <Route exact path='/formControl' component={FormControl}/>
           <Route component={Error404}/>
         </Switch>
