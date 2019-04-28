@@ -8,13 +8,25 @@ class FormControl extends React.Component{
     this.state={
       newTapForm: false
     };
+    this.checkPassword = this.checkPassword.bind(this);
+  }
+
+  checkPassword(input){
+    if(input.password === "password"){
+      this.setState({
+        newTapForm: true
+      })
+    } else {
+      console.log("no")
+    }
   }
   render(){
+    let password = null;
     let currentState = null;
     if(this.state.newTapForm){
       currentState = <NewTapForm/>;
     } else {
-      currentState = <SecurityQuestion/>;
+      currentState = <SecurityQuestion sendPassword={this.checkPassword}/>;
     }
     return(
       <div>

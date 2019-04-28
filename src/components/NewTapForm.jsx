@@ -23,15 +23,18 @@ class NewTapForm extends React.Component{
             <input
               type='text'
               id='name'
-              placeholder='Tap Name'/>
+              placeholder='Tap Name'
+              ref={(input) => {_name = input;}}/>
             <input
               type='number'
               id='price'
-              placeholder='Price'/>
+              placeholder='Price'
+              ref={(input) => {_price = input;}}/>
             <input
               type='number'
               id='abv'
-              placeholder='Alcohol Content'/>
+              placeholder='Alcohol Content'
+              ref={(input) => {_abv = input;}}/>
             <button onClick={this.handleClick}>Submit</button>
           </form>
         </div>
