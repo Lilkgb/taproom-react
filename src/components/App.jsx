@@ -13,9 +13,10 @@ class App extends React.Component{
     this.state={
       masterTapList: []
     }
+    this.handleNewForm = this.handleNewForm.bind(this);
   }
-  handleNewform(){
-
+  handleNewForm(tap){
+    console.log(tap);
   }
   render(){
     return (

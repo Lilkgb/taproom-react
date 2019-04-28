@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 function SecurityQuestion(props){
   let _password = null;
+  
   function submitPassword(event){
     event.preventDefault();
     props.sendPassword({
