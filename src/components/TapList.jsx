@@ -1,69 +1,26 @@
 import React from 'react';
 import Tap from './Tap';
 import '../scss/styles.scss';
+import FormControl from './FormControl';
+import PropTypes from 'prop-types';
 
-const masterTapList = [
-  {
-    name: 'Bud Light',
-    price: '3',
-    content: '4.2',
-    picture: 'budLight.png'
-  },
-  {
-    name: 'Elysian Space Dust',
-    price: '5',
-    content: '8.2',
-    picture: 'elysianSpaceDust.png'
-  },
-  {
-    name: 'Elysian Dayglow',
-    price: '5',
-    content: '7.2',
-    picture: 'elysianDayglow.png'
-  },
-  {
-    name: 'Elysian Superfuzz',
-    price: '4',
-    content: '6.4',
-    picture: 'elysianSuperfuzz.png'
-  },
-  {
-    name: 'Modelo',
-    price: '3',
-    content: '4.5',
-    picture: 'modelo.png'
-  },
-  {
-    name: 'Corona Extra',
-    price: '3',
-    content: '4.5',
-    picture: 'coronaExtra.png'
-  },
-  {
-    name: 'Coors Light',
-    price: '3.50',
-    content: '4.2',
-    picture: 'coorsLight.png'
-  },
-  {
-    name: 'Coors Banquet',
-    price: '4',
-    content: '5',
-    picture: 'coorsBanquet.png'
-  }
-];
-function TapList(){
+function TapList(props){
+
   return (
     <div className="flex" >
-      {masterTapList.map((tap, index) =>
+      {props.tapList.map((tap) =>
         <Tap name={tap.name}
           price={tap.price}
-          content={tap.content}
+          content={tap.abv}
           picture={tap.picture}
-          key={index}/>
+          key={tap.id}/>
       )}
     </div>
   );
+}
+
+TapList.propTypes = {
+  tapList: PropTypes.array
 }
 
 export default TapList;

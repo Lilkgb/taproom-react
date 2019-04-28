@@ -11,8 +11,11 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state={
-
+      masterTapList: []
     }
+  }
+  handleNewform(){
+
   }
   render(){
     return (
@@ -20,8 +23,8 @@ class App extends React.Component{
         <Header/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/inventory' component={TapList}/>
-          <Route exact path='/formControl' component={FormControl}/>
+          <Route path='/inventory' render={()=><TapList tapList={this.state.masterTapList}/>}/>
+          <Route path='/formControl' render={()=><FormControl sendform={this.handleNewForm}/>}/>
           <Route component={Error404}/>
         </Switch>
         <h1 style={{height: '50px'}}></h1>
