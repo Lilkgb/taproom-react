@@ -1,12 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
+import Moment from 'moment';
 
-function NewTapForm(){
+function NewTapForm(props){
   let _name = null;
   let _price = null;
   let _abv = null;
-  
-  function submitForm(){
-    console.log("YEET")
+
+  function submitForm(event){
+    event.preventDefault();
+    props.sendForm({
+      name: _name.value,
+      price: _price.value,
+      abv: _abv.value,
+      id: v4(),
+      updated: new Moment()
+    })
+    _name.value = ''
+    _price.value = ''
+    _abv.value = ''
   }
   return (
     <div>
@@ -37,4 +50,7 @@ function NewTapForm(){
   );
 }
 
+NewTapForm.propTypes = {
+  sendForm: PropTypes.func
+}
 export default NewTapForm;

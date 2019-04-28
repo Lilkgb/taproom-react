@@ -1,6 +1,7 @@
 import React from 'react';
 import SecurityQuestion from './SecurityQuestion';
 import NewTapForm from './NewTapForm';
+import PropTypes from 'prop-types';
 
 class FormControl extends React.Component{
   constructor(props){
@@ -24,7 +25,7 @@ class FormControl extends React.Component{
     let password = null;
     let currentState = null;
     if(this.state.newTapForm){
-      currentState = <NewTapForm/>;
+      currentState = <NewTapForm sendForm={this.props.sendForm}/>;
     } else {
       currentState = <SecurityQuestion sendPassword={this.checkPassword}/>;
     }
@@ -34,5 +35,9 @@ class FormControl extends React.Component{
       </div>
     );
   }
+}
+
+FormControl.propTypes = {
+  sendForm: PropTypes.func
 }
 export default FormControl
