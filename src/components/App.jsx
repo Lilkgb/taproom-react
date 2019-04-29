@@ -15,6 +15,22 @@ class App extends React.Component{
     }
     this.handleNewForm = this.handleNewForm.bind(this);
   }
+  componentDidMount(){
+    this.waitTimeUpdateTimer = setInterval(() =>
+      this.updateTapTime(),
+      60000
+    );
+  }
+  updateTapTime(){
+    let newMasterTapList = this.state.masterTapList.slice();
+    newMasterTapList.forEach((ticket) =>
+      ticket.updateTime = (ticket.updated).fromNow(true)
+    );
+    this.setState({masterTapList: newMasterTapList})
+  }
+  componentWillUnmount(){
+    clearInterval(this.waitTimeUpdateTimer)
+  }
   handleNewForm(newTap){
     let newMasterTapList = this.state.masterTapList.slice();
     newTap.updateTime = (newTap.updated).fromNow(true)
