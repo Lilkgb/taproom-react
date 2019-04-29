@@ -37,6 +37,9 @@ class App extends React.Component{
     newMasterTapList.push(newTap);
     this.setState({masterTapList: newMasterTapList})
   }
+  something(){
+    console.log("yup")
+  }
   render(){
     return (
       <div>

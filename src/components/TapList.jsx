@@ -5,7 +5,6 @@ import FormControl from './FormControl';
 import PropTypes from 'prop-types';
 
 function TapList(props){
-
   return (
     <div className="flex" >
       {props.tapList.map((tap) =>
@@ -20,7 +19,7 @@ function TapList(props){
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
+  tapList: PropTypes.array,
 }
 
 export default TapList;
