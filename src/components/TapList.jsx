@@ -11,8 +11,8 @@ function TapList(props){
       {props.tapList.map((tap) =>
         <Tap name={tap.name}
           price={tap.price}
-          content={tap.abv}
-          picture={tap.picture}
+          abv={tap.abv}
+          updateTime={tap.updateTime}
           key={tap.id}/>
       )}
     </div>

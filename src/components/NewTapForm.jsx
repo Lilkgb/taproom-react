@@ -10,14 +10,13 @@ function NewTapForm(props){
 
   function submitForm(event){
     event.preventDefault();
-    console.log("hi");
-    props.sendForm({
+    props.sendTapForm({
       name: _name.value,
       price: _price.value,
       abv: _abv.value,
       id: v4(),
       updated: new Moment()
-    })
+    });
     _name.value = ''
     _price.value = ''
     _abv.value = ''
@@ -52,7 +51,7 @@ function NewTapForm(props){
 }
 
 NewTapForm.propTypes = {
-  sendForm: PropTypes.func
+  sendTapForm: PropTypes.func
 }
 
 export default NewTapForm;

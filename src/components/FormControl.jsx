@@ -22,10 +22,9 @@ class FormControl extends React.Component{
     }
   }
   render(){
-    let password = null;
     let currentState = null;
     if(this.state.newTapForm){
-      currentState = <NewTapForm sendForm={this.props.sendForm}/>;
+      currentState = <NewTapForm sendTapForm={this.props.sendTapForm}/>;
     } else {
       currentState = <SecurityQuestion sendPassword={this.checkPassword}/>;
     }

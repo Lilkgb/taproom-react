@@ -24,8 +24,8 @@ function Tap(props){
           }
         `}</style>
       <h3>{props.name} - ${props.price}</h3>
-      <p><em>ABV: {props.content}%</em></p>
-      <img src={require(`../assets/beers/${props.picture}`)}></img>
+      <p><em>ABV: {props.abv}%</em></p>
+      <p>{props.updateTime}</p>
     </div>
   );
 }
@@ -33,8 +33,8 @@ function Tap(props){
 Tap.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  picture: PropTypes.string
+  abv: PropTypes.string,
+  updateTime: PropTypes.string.isRequired
 };
 
 export default Tap;
