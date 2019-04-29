@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../scss/styles.scss';
+import Editor from './Editor';
 
 class Tap extends React.Component{
   constructor(props){
@@ -9,11 +10,25 @@ class Tap extends React.Component{
       edit: false
     }
     this.information = this.information.bind(this)
+    this.closeEditor = this.closeEditor.bind(this)
   }
   information(){
-    console.log(this.props.name)
+    this.setState({
+      edit: true
+    })
+  }
+  closeEditor(){
+    this.setState({
+      edit: false
+    })
   }
   render(){
+    let editor = null
+    if (this.state.edit){
+      editor = <Editor closeEditor={this.closeEditor}/>
+    } else {
+      editor = false
+    }
     let tapStyles = {
       textAlign: 'center',
       fontFamily: 'sans-serif',
@@ -34,6 +49,7 @@ class Tap extends React.Component{
         <p><em>ABV: {this.props.abv}%</em></p>
         <p>last updated: {this.props.updateTime}</p>
         <button onClick={this.information}>hi</button>
+        {editor}
       </div>
     );
   }
